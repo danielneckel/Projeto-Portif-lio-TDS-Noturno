@@ -1,0 +1,232 @@
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+}
+
+body {
+  margin: 2% 2%;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--body-bg-color);
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+p{
+  color: #837e9f;
+}
+
+h2{
+  color: #837e9f;
+}
+
+h1{
+  color: #837e9f;
+
+}
+
+h3{
+  color: #837e9f;
+
+}
+
+
+.main {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: 20% 37% 37%;
+  grid-template-rows: 4% 12% 5% 16% 11% 23%;
+  grid-template-areas:
+    "profile myprojects myprojects"
+    "profile postGH-1 postGH-2"
+    "contacts recentPost recentPost"
+    "contacts post post"
+    "tec . ."
+    "exp . ."
+    "edu . .";
+
+  column-gap: 3%;
+  row-gap: 3%;
+}
+
+.profile {
+  grid-area: profile;
+  border: solid 2px var(--bg-cards);
+  width: 20vw;
+  height: 35vh;
+  min-width: 195px;
+  min-height: 209px;
+  background-color: #302e3b;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  
+
+}
+
+.profile img {
+  width: 130px;
+  height: 130px;
+  border: 2px solid rgb(70, 255, 70);
+  border-radius: 50%;
+  background-color: var(--back-imgs);
+}
+
+
+.profile p {
+  margin: 0px;
+}
+
+.profile h2 {
+  margin-bottom: 5px;
+}
+
+.myprojects {
+  grid-area: myprojects;
+  border: solid 2px var(--bg-cards);
+  width: 73vw;
+  height: 10vh;
+  border-radius: 10px;
+  background-color: #302e3b;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.contacts {
+  grid-area: contacts;
+  border: solid 2px var(--bg-cards);
+  width: 20vw;
+  height: 44vh;
+  border-radius: 10px;
+  background-color: #302e3b;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.postGH-1 {
+  grid-area: postGH-1;
+  padding: 10px 0px 0px 28px;
+  border: 1px solid var(--bg-cards);
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 4px 3px rgb(0, 0, 0, 10%);
+  width: 33vw;
+  height: 25vh;
+  min-width: 300;
+  min-height: 100;
+  background-color: var(--bg-cards);
+}
+
+.postGH-1-cima{
+  background-color: #302f3d;
+}
+
+.postGH-1-baixo {
+  display: flex;
+}
+
+.postGH-1 .postGH-1-cima img {
+  margin-right: 20px;
+}
+
+.postGH-1 p {
+  font-size: 0.9em;
+  margin-top: 0px;
+}
+
+.postGH-2 {
+  grid-area: postGH-2;
+  border: solid 2px var(--bg-cards);
+  width: 35vw;
+  height: 21vh;
+  border-radius: 10px;
+  background-color: #302e3b;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+} 
+
+.postGH-2-cima{
+  background-color: #302f3d;
+}
+
+.recentPost {
+  grid-area: recentPost;
+  border: solid 2px var(--bg-cards);
+  width: 73vw;
+  height: 10vh;
+  border-radius: 10px;
+  background-color: #302e3b;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.post {
+  grid-area: post;
+  margin-top: 0px;
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--bg-cards);
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 4px 3px rgb(0, 0, 0, 10%);
+  width: 69vw;
+  height: 30vh;
+  min-width: 300;
+  min-height: 100;
+  background-color: var(--bg-cards);
+}
+
+.post .postEscrita {
+  margin-left: 30px;
+}
+
+.post img {
+  width: 130px;
+  height: 120px;
+
+  border: 0px solid;
+  border-radius: 20%;
+}
+
+.post p {
+  font-size: 0.7em;
+}
+
+.tecnologies {
+  grid-area: tec;
+  border: solid 3px var(--bg-cards);
+  width: 20vw;
+  height: 21vh;
+  border-radius: 10px;
+  background-color: #302e3b;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+.experiences {
+  grid-area: exp;
+  border: solid 2px var(--bg-cards);
+  width: 20vw;
+  height: 44vh;
+  border-radius: 10px;
+  background-color: #302e3b;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.education {
+  grid-area: edu;
+  border: solid 2px var(--bg-cards);
+  width: 20vw;
+  height: 44vh;
+  border-radius: 10px;
+  background-color: #302e3b;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.f2{
+  width: 5px;
+  height: 5px;
+}
